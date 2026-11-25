@@ -1,4 +1,4 @@
-/* Стиль «Продающий»: лендинг под заявки. Главная деталь – калькулятор или онлайн-запись на первом экране
+﻿/* Стиль «Продающий»: лендинг под заявки. Главная деталь – калькулятор или онлайн-запись на первом экране
    и живое «сообщение-превью», которое уходит владельцу в мессенджер. Цвета и шрифты – из палитры ниши. */
 *, *::before, *::after { box-sizing: border-box; }
 :root {
@@ -202,5 +202,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
   .s-dock .s-btn:first-child { flex: 1.7; }
 }
 
-/* фон первого экрана: неон читается как свет, а не как обрезанная надпись */
-.s-hero__bg img { filter: blur(9px) saturate(.9); opacity: .22; }
+/* Фото студии перед контактами (блок этого сайта). */
+.s-team figure { margin: 0 auto; width: min(100%, 480px); }
+.s-team img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r); border: 1px solid var(--hair); }
+.s-team figcaption { margin-top: 8px; font-size: .84rem; color: var(--c-ink-soft); }
